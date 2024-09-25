@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Suite">
+	
+	<listeners>
+		<listener class-name="demo.Ltst_maven_tstNG.ListnerDemo"/>
+	</listeners>
+	
+	<parameter name="url" value="https://test-merchant.boxpay.tech/"/>
+	
+    <test thread-count="5" parallel="false" name="DemoTest">  
+		 
+    <classes>
+      <class name="demo.Ltst_maven_tstNG.Demo"> 
+	  <!--<parameter name="msg" value="Test1 Passed!"></parameter>	-->
+	   <parameter name="msg2" value="Test2 Passed!"></parameter>	
+      </class>
+      
+      
+    <class name="demo.Ltst_maven_tstNG.passwrd"/> 	
+		  <parameter name="msg3" value="This Test Passed!"></parameter>	
+    </classes>
+    
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+
